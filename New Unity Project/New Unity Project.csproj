@@ -285,12 +285,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Bullet.cs" />
-    <Compile Include="Assets\CameraScript.cs" />
-    <Compile Include="Assets\Enemy.cs" />
-    <Compile Include="Assets\FirstPerson.cs" />
-    <Compile Include="Assets\Gun.cs" />
-    <Compile Include="Assets\SmoothMouseLook.cs" />
+    <Compile Include="Assets\Script\Bullet.cs" />
+    <Compile Include="Assets\Script\CameraScript.cs" />
+    <Compile Include="Assets\Script\Enemy.cs" />
+    <Compile Include="Assets\Script\EnemySpawner.cs" />
+    <Compile Include="Assets\Script\FirstPerson.cs" />
+    <Compile Include="Assets\Script\Gun.cs" />
+    <Compile Include="Assets\Script\SmoothMouseLook.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

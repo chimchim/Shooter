@@ -22,7 +22,7 @@ public class Gun : MonoBehaviour
 	public void Shoot(Vector3 direction)
 	{
 		var newcurrentBullet = Instantiate(BulletPrefab);
-		newcurrentBullet.ShootBullet(transform.forward, SpawnPosition.position);
+		newcurrentBullet.ShootBullet(direction, SpawnPosition.position);
 		reloadTimer = 0;
 	}
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FirstPerson : MonoBehaviour
 {
+	public float HP = 100;
 	public float JumpSpeed = 2;
 	public Transform Camera;
 	public Gun PlayerGun;
@@ -31,13 +32,21 @@ public class FirstPerson : MonoBehaviour
 		var translate = finaldirection * 4 * Time.deltaTime;
 		transform.Translate(translate);
 
+		Debug.DrawLine(PlayerGun.SpawnPosition.position, (Camera.transform.position + (Camera.forward * 10)), Color.red);
 		if (Input.GetMouseButtonDown(0) && PlayerGun.CanShoot)
 		{
-			PlayerGun.Shoot(Camera.transform.forward);
-
+			var dir =  (Camera.transform.position + (Camera.forward * 15)) - PlayerGun.SpawnPosition.position;
+			PlayerGun.Shoot(dir.normalized);
 		}
 	}
 
+	private void OnTriggerEnter(Collider other)
+	{
+		Destroy(other.gameObject);
 
+		HP -= 10;
 
+		if(HP <= 0)
+			Destroy(gameObject);
+	}
 }

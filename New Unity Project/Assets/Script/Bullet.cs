@@ -7,10 +7,13 @@ public class Bullet : MonoBehaviour {
 	public float BulletSpeed;
 
 	Vector3 Direction;
+
+	private void Start()
+	{
+		Destroy(gameObject, 100);
+	}
 	void Update ()
 	{
-		if (Direction == Vector3.zero) return;
-
 		var translate = Direction * Time.deltaTime * BulletSpeed;
 		transform.Translate(translate);
 	}

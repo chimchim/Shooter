@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 629752014}
   - component: {fileID: 629752013}
   - component: {fileID: 629752012}
+  - component: {fileID: 629752016}
   m_Layer: 0
   m_Name: Capsule (3)
   m_TagString: Untagged
@@ -350,6 +351,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629752016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 629752011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5de30408ee7e864eb71cf7b15e60258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPrefab: {fileID: 1315398960013306, guid: d78019729bc441d46bee8661e905bee4,
+    type: 2}
 --- !u!1 &1067987870
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,6 +375,7 @@ GameObject:
   - component: {fileID: 1067987873}
   - component: {fileID: 1067987872}
   - component: {fileID: 1067987871}
+  - component: {fileID: 1067987875}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: Untagged
@@ -435,6 +450,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1067987875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067987870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5de30408ee7e864eb71cf7b15e60258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPrefab: {fileID: 1315398960013306, guid: d78019729bc441d46bee8661e905bee4,
+    type: 2}
 --- !u!1001 &1530883891
 Prefab:
   m_ObjectHideFlags: 0
@@ -473,6 +501,10 @@ Prefab:
     - target: {fileID: 4318699459327190, guid: bfa4ee863f2605140a9d7b34433269fb, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734323581892894, guid: bfa4ee863f2605140a9d7b34433269fb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.77
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfa4ee863f2605140a9d7b34433269fb, type: 2}
@@ -582,6 +614,7 @@ GameObject:
   - component: {fileID: 1746906529}
   - component: {fileID: 1746906528}
   - component: {fileID: 1746906527}
+  - component: {fileID: 1746906531}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -656,6 +689,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1746906531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1746906526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5de30408ee7e864eb71cf7b15e60258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPrefab: {fileID: 1315398960013306, guid: d78019729bc441d46bee8661e905bee4,
+    type: 2}
 --- !u!1 &1769840637
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +775,7 @@ GameObject:
   - component: {fileID: 1815548764}
   - component: {fileID: 1815548763}
   - component: {fileID: 1815548762}
+  - component: {fileID: 1815548766}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -803,6 +850,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1815548766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1815548761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5de30408ee7e864eb71cf7b15e60258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPrefab: {fileID: 1315398960013306, guid: d78019729bc441d46bee8661e905bee4,
+    type: 2}
 --- !u!1 &2033565932
 GameObject:
   m_ObjectHideFlags: 0
